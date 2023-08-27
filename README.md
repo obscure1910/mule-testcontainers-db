@@ -1,6 +1,6 @@
 # Mule-Testcontainers-Db Extension
 
-This extension allows to use database Testcontainer in your Munit tests. This is possible by specifying a jdbc url and a driver class name.
+This extension allows to use database Testcontainer in your Munit tests for Mule4. This is possible by specifying a jdbc url and a driver class name.
 
 An example configuration in you properties file could be like this if you want to test with PostgreSQL.
 
