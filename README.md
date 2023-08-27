@@ -65,3 +65,6 @@ In order to start and stop containers you have to configure the "Before Suite" a
 If you want to create database tables via scripts you can use the normal Mule DB processors.
 
 ![Drag Racing](assets/screenshot.png)
+
+A complete example (Anypoint Studio) how to use this extension is in the repository [mule-testcontainers-example](https://github.com/obscure1910/mule-testcontainers-example/tree/plugin).
+The main branch of the referenced repository contains an example how to use Testcontainers without this plugin but with beans.
