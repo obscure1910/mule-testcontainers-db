@@ -1,0 +1,30 @@
+{
+  "extensionModelLoaderDescriptor": {
+    "id": "java",
+    "attributes": {
+      "type": "io.github.obscure1910.internal.MuletestcontainersDbExtension",
+      "version": "1.0.0"
+    }
+  },
+  "name": "Mule-testcontainers-db",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "privilegedExportedPackages": [],
+      "privilegedArtifactIds": [],
+      "exportedPackages": [
+        "org.testcontainers",
+        "org.testcontainers.jdbc",
+        "org.testcontainers.containers",
+        "org.testcontainers.dockerclient"
+      ],
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "minMuleVersion": "4.1.1"
+}
