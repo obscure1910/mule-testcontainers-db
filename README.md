@@ -19,7 +19,7 @@ Add this dependency to your application pom.xml
 <dependency>
     <groupId>io.github.obscure1910</groupId>
     <artifactId>mule-testcontainers-db</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <scope>test</scope>
     <classifier>mule-plugin</classifier>
 </dependency>
@@ -59,6 +59,24 @@ and configure it as shared library
         </plugin>
     </plugins>
 </build>
+```
+
+Because we will stop and remove our started containers manually we have to disable ryuk via setting the appropriate environment variable.
+```
+<plugin>
+    <groupId>com.mulesoft.munit.tools</groupId>
+    <artifactId>munit-maven-plugin</artifactId>
+    <version>${munit.version}</version>
+    <executions>
+        ...
+    </executions>
+    <configuration>
+        <environmentVariables>
+            <TESTCONTAINERS_RYUK_DISABLED>true</TESTCONTAINERS_RYUK_DISABLED>
+        </environmentVariables>
+        ...
+    </configuration>
+</plugin>
 ```
 
 In order to start and stop containers you have to configure the "Before Suite" and "After Suit" processors.
